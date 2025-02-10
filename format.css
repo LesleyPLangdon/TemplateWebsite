@@ -1,0 +1,60 @@
+:root {
+    --primaryBackground: #9CFFFA;
+    --primaryText: #351431;
+    --secondaryBackground: #36827F;
+    --secondaryText: #FCF7FF;
+    --accent: #CC2936;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primaryBackground);
+    color: var(--primaryText);
+    font-family: Lora, 'Times New Roman', Times, serif;
+   
+}
+header, footer {
+    height: 10vh;
+    background-color: var(--secondaryBackground);
+    color: var(--secondaryText);
+}
+header {
+    text-align: center;
+}
+main {
+    background-color: var(--primaryBackground);
+    color: var(--primaryText);
+    display: grid;
+    grid-template-areas: 
+        "nav main rightSide";
+    grid-template-columns: 1fr 3fr 1fr;
+}
+nav, #rightSide {
+    
+    min-height: 80vh;
+    background-color: var(--secondaryBackground);
+    color: var(--secondaryText);
+}
+
+
+nav {
+    grid-area: nav;
+}
+.content {
+    grid-area: main;
+}
+#rightSide {
+    grid-area: rightSide;
+}
+h1 {
+    
+    font-style: italic;
+}
+a {
+    text-decoration: none;
+    color: var(--secondaryText);
+}
+
+.currentPage {
+    color: var(--accent);
+}
