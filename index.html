@@ -8,30 +8,48 @@
         <title></title>
         <link href="style.css" rel="stylesheet" type="text/css" />
         <link href="format.css" rel="stylesheet" type="text/css" />
+        <!-- <link href="nav.css" rel="stylesheet" type="text/css" /> -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <h1>Student Name</h1>
-        </header>
-        <main>
-            <nav>
-                <h3><a href="index.html" class="currentPage">HOME</a></h3>
-                <h3><a href="aboutMe.html">ABOUT ME</a></h3>
-            </nav>
-            <section id="indexContent" class="content">
 
-            </section>
+        <header>
+            <span style="font-size:30px;cursor:pointer;float:left" onclick="openNav()">&#9776;</span>
+            <h1>Student Name</h1>
+            <!-- <span style="float:right">social links</span> -->
+        </header>
+        <nav class="slidenav" id="mySidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <h3><a href="index.html" class="currentPage">HOME</a></h3>
+            <h3><a href="aboutMe.html">ABOUT ME</a></h3>
+            
+        </nav>
+        
+        <main id="main">
+            
+            
+            <section id="indexContent" class="content"></section>
+
             <section id="rightSide">
                 <div>
                     <h3>CURRENT POSITION</h3>
                 </div>
-
             </section>
         </main>
+
         <footer></footer>
+
         <script src="script.js"></script>
     </body>
 </html>
+
+
+
+
+
+
+ 
+    
+    
