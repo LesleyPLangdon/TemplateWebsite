@@ -36,17 +36,20 @@
     transition: margin-left .5s;
     padding: 16px;
   }
+#topnav {
+  grid-area: topnav;
+}
 main {
     grid-template-areas: 
-      
+    "topnav topnav"  
     "main rightSide";
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 4fr 1fr;
 
 }
 
 #topnav {    
     height: 10vh;
-    background-color: var(--secondaryBackground);
+    background-color: var(--accent);
     color: var(--secondaryText);
     overflow: hidden;
 }
